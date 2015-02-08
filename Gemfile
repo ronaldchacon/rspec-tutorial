@@ -19,3 +19,13 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
 end
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
+end
